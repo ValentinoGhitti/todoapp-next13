@@ -27,7 +27,7 @@ const AddTask = () => {
     <div>
       <button 
         onClick={() => setModalOpen(true)} 
-        className="btn btn-primary w-full"
+        className="btn btn-outline btn-primary w-full"
       >Añadir nueva tarea <AiOutlinePlus className='ml-2' size={18} />
       </button>
     
@@ -39,10 +39,10 @@ const AddTask = () => {
               type="text"
               value={newTaskValue}
               onChange={(e) => setNewTaskValue(e.target.value)}
-              placeholder="Type here" 
+              placeholder="Escribí acá" 
               className="input input-bordered w-full" 
             />
-            <button type='submit' className='btn'>Crear Tarea</button>
+            <button type='submit' className='btn btn-accent'>Crear Tarea</button>
           </div>
         </form>
       </Modal>

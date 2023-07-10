@@ -34,9 +34,9 @@ const TaskComponent: React.FC<TaskProps> = ({task}) => {
   }
 
   return (
-    <tr key={task.id}>
-      <td className="w-full">{task.text}</td>
-      <td className="flex gap-5">
+    <div key={task.id} className="flex items-center">
+      <div className="w-full text-secondary-content">{task.text}</div>
+      <div className="flex gap-2">
         <FiEdit
           onClick={() => setOpenModalEdit(true)}
           cursor={'pointer'} 
@@ -46,16 +46,16 @@ const TaskComponent: React.FC<TaskProps> = ({task}) => {
 
         <Modal modalOpen={openModalEdit} setModalOpen={setOpenModalEdit}>
           <form onSubmit={handleSubmitEditTodo}>
-            <h3 className='font-bold text-lg'>Agregar nueva tarea</h3>
+            <h3 className='font-bold text-lg text-primary-content'>Edita la tarea actual</h3>
             <div className='modal-action'>
               <input 
                 type="text"
                 value={taskToEdit}
                 onChange={(e) => setTaskToEdit(e.target.value)}
-                placeholder="Type here" 
-                className="input input-bordered w-full" 
+                placeholder="Escribí acá" 
+                className="input input-bordered w-full text-primary-content" 
               />
-              <button type='submit' className='btn'>Crear Tarea</button>
+              <button type='submit' className='btn btn-outline btn-primary'>Editar Tarea</button>
             </div>
           </form>
         </Modal>
@@ -63,19 +63,19 @@ const TaskComponent: React.FC<TaskProps> = ({task}) => {
         <FiTrash2
           onClick={() => setOpenModalDelete(true)}
           cursor={'pointer'} 
-          className="text-red-500" 
-          size={25} 
+          className="text-error" 
+          size={25}
         />
 
         <Modal modalOpen={openModalDelete} setModalOpen={setOpenModalDelete}>
-          <h3 className="text-lg">¿Estás seguro de borrar la tarea?</h3>
+          <h3 className="text-lg text-primary-content font-bold">¿Estás seguro de borrar la tarea?</h3>
           <div className="modal-action">
-            <button onClick={() => handleDeleteTask(task.id)} className="btn">Sí</button>
-            <button onClick={() => setOpenModalDelete(false)} className="btn">No</button>
+            <button onClick={() => handleDeleteTask(task.id)} className="btn btn-outline btn-primary">Confirmar</button>
+            <button onClick={() => setOpenModalDelete(false)} className="btn btn-outline btn-error">Salir</button>
           </div>
         </Modal>
-      </td>
-    </tr>
+      </div>
+    </div>
   );
 }
 
