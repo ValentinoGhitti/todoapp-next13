@@ -9,11 +9,14 @@ Para crear la app usé:
 - **json-server**
 - **Tailwind CSS**
 - **DaisyUI**
+- 
+## Pueden ver el resultado acá
 
+- **Post:** https://www.linkedin.com/posts/valentino-ghitti-b6042120a_react-next-javascript-activity-7084220421931212800-nMnW?utm_source=share&utm_medium=member_desktop
 
 ## Notas de vachu
 
-Tenía ganas de hacer algo con next y TS, aparte probé la biblioteca de componentes de DaisyUI, que es una mejor opción que Bootstrap para algunos casos particulares. Aparte nunca había usado json-server y terminó siendo una herramienta útil para hacer aplicaciones web rápidas sin mucho bardo. 
+Tenía ganas de hacer algo con next y TS, aparte probé la biblioteca de componentes de DaisyUI, que es una mejor opción que Bootstrap para algunos casos particulares. Y el nuevo descubrimiento fue json-server. que terminó siendo una herramienta útil para simular apirest, ideal para los fronts con pereza.
 
 <br>
 <hr>
