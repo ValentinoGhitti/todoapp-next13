@@ -9,7 +9,7 @@ Para crear la app usé:
 - **json-server**
 - **Tailwind CSS**
 - **DaisyUI**
-- 
+
 ## Pueden ver el resultado acá
 
 - **Post:** https://www.linkedin.com/posts/valentino-ghitti-b6042120a_react-next-javascript-activity-7084220421931212800-nMnW?utm_source=share&utm_medium=member_desktop
